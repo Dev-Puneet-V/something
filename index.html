@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DistroPlus | Advanced Distributor Platform</title>
+    <meta name="description" content="A premium distributor management platform with dynamic roles and permissions.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <div class="logo-icon">DP</div>
+                    <span>DistroPlus</span>
+                </div>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-item active" data-page="dashboard">
+                    <i data-lucide="layout-dashboard"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="nav-item" data-page="roles">
+                    <i data-lucide="shield-check"></i>
+                    <span>Roles & Permissions</span>
+                </a>
+                <a href="#" class="nav-item" data-page="users">
+                    <i data-lucide="users"></i>
+                    <span>User Management</span>
+                </a>
+                <a href="#" class="nav-item" data-page="vendors">
+                    <i data-lucide="truck"></i>
+                    <span>Vendors</span>
+                </a>
+                <a href="#" class="nav-item" data-page="products">
+                    <i data-lucide="shopping-bag"></i>
+                    <span>Products</span>
+                </a>
+                <a href="#" class="nav-item" data-page="modules">
+                    <i data-lucide="package"></i>
+                    <span>Modules</span>
+                </a>
+                <a href="#" class="nav-item" data-page="mobile-preview">
+                    <i data-lucide="smartphone"></i>
+                    <span>Mobile Preview</span>
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Admin" alt="Admin">
+                    <div class="user-info">
+                        <p class="user-name">Super Admin</p>
+                        <p class="user-role">Full Access</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="search-bar">
+                    <i data-lucide="search"></i>
+                    <input type="text" placeholder="Search anything...">
+                </div>
+                <div class="top-actions">
+                    <button class="icon-btn"><i data-lucide="bell"></i></button>
+                    <button class="icon-btn"><i data-lucide="settings"></i></button>
+                </div>
+            </header>
+
+            <div id="page-content" class="content-area">
+                <!-- Content will be injected here -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Modals -->
+    <div id="modal-container" class="modal-overlay hidden">
+        <div class="modal-card">
+            <div class="modal-header">
+                <h3 id="modal-title">Add New Role</h3>
+                <button class="close-modal" id="close-modal"><i data-lucide="x"></i></button>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <!-- Form content injected here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
