@@ -2,7 +2,7 @@
 
 A premium distributor management platform built with sophisticated administrative tools, hierarchical data structures, and advanced role-based access control.
 
-## 🚀 Development Roadmap
+## Development Roadmap
 
 We are developing the core system modules in the following order, ensuring each layer is robust and interconnected:
 
@@ -31,7 +31,7 @@ We are developing the core system modules in the following order, ensuring each 
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 - **Frontend**: Vanilla HTML5, CSS3, JavaScript (ES6+).
 - **Icons**: Lucide Icons for a modern, crisp UI.
 - **Styling**: Premium Glassmorphism and modern design principles.
